@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="auth-container" id="auth-container">
+      <!-- Logo Section -->
+      <div class="logo-container">
+        <img src="logo.webp" alt="WebChat Logo" class="logo" />
+      </div>
+
+      <!-- Welcome Text -->
+      <h2 class="welcome-text">Welcome to WeMi</h2>
+
+      <div id="login-box">
+        <input type="text" id="username" placeholder="Enter Username" />
+        <input type="password" id="password" placeholder="Enter Password" />
+        <button id="login-button">Login</button>
+      </div>
+      <div id="signup-box" class="hidden">
+        <input type="text" id="new-username" placeholder="Choose Username" />
+        <input
+          type="password"
+          id="new-password"
+          placeholder="Choose Password"
+        />
+        <button id="signup-button">Sign Up</button>
+      </div>
+      <p id="toggle-auth">Don't have an account? <span>Sign Up</span></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Auth Container */
+.auth-container {
+  width: 400px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+/* Logo Styling */
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Welcome Text */
+.welcome-text {
+  color: #808080; /* Slight grey */
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+/* Input Fields and Buttons */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #3367d6;
+}
+
+/* Hover effect for links */
+#toggle-auth span {
+  color: #4285f4;
+  cursor: pointer;
+}
+
+#toggle-auth span:hover {
+  color: #3367d6;
+}
+
+/* Hidden class to toggle between login and signup */
+.hidden {
+  display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .auth-container {
+    width: 80%;
+  }
+}
